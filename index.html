@@ -4,167 +4,605 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+  <title>My Portfolio | Bashaar</title>
 
-  <!-- <link rel="stylesheet" href="Styles/navbar.css"> -->
+  <!--==================== FAVICON ====================-->
+  <link rel="icon" href="Assets/logo.png" class="favicon">
+
+  <!--==================== Bootstrap ====================-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="Styles/nav.css">
   <link rel="stylesheet" href="Styles/hero.css">
-  <!-- <link rel="stylesheet" href="Styles/about.css"> -->
+  <link rel="stylesheet" href="Styles/about.css">
+  <link rel="stylesheet" href="Styles/logos.css">
+  <link rel="stylesheet" href="Styles/cta.css">
+  <link rel="stylesheet" href="Styles/portfolio.css">
+  <link rel="stylesheet" href="Styles/contact.css">
+  <link rel="stylesheet" href="Styles/footer.css">
+
+  <!--==================== Remixicon ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!--==================== FONTAWESOME ====================-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Goldman:wght@400;700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="container">
-    <section class="hero">
-      <h1>Symphonia</h1>
-    </section>
+  <!--============================== NAVBAR =================================-->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <!-- Logo/Brand -->
+      <a class="navbar-brand" href="#">Bashaar</a>
 
-    <section class="info">
-      <div class="header-rows">
-        <div class="header-row">
-          <h1>MOTION</h1>
-        </div>
-        <div class="header-row">
-          <h1>SKILLS</h1>
-        </div>
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn-get-started">Contact Me</a>
       </div>
-    </section>
-
-    <section class="header-info">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-    </section>
-
-    <div class="header-images">
-      <img src="https://source.unsplash.com/random" alt="" />
-      <img src="https://source.unsplash.com/random" alt="" />
-      <img src="https://source.unsplash.com/random" alt="" />
-      <img src="https://source.unsplash.com/random" alt="" />
     </div>
+  </nav>
 
-    <section class="whitespace"></section>
+  <!--============================== HERO =================================-->
+  <section class="hero-section mt-5" id="hero">
 
-    <section class="pinned">
-      <div class="revealer">
-        <div class="revealer-1"></div>
-        <div class="revealer-2"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-subtitle">
+          Fontend Developer and Designer
+        </p>
+
+        <h1 class="hero-title">
+          Building seamless, modern web <span class="highlight"><span>experiences</span></span>
+        </h1>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary-hero">
+            Contact Me
+          </a>
+          <a href="#about" class="btn-secondary-hero">
+            About Me
+          </a>
+        </div>
+
+        <p class="hero-note">
+          High level experience in web design and development knowledge, producing quality work.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="website-content">
-      <h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua
-      </h1>
-    </section>
+  <!--============================== ABOUT =================================-->
+  <section class="about-section mt-5" id="about">
 
-    <!-- STEPS ANIMATION -->
-    <section class="steps">
-      <div class="step-counter">
-        <div class="counter-title">
-          <h1>STEPS</h1>
+    <div class="container about-container">
+      <div class="about-content">
+        <!-- Text Content -->
+        <div class="about-text fade-in">
+          <h2 class="about-title">
+            My Introduction.
+          </h2>
+          <p class="about-description">
+            Hi, I'm Bashaar from Pakistan — a versatile professional in web development, graphic design, and UI/UX. I
+            bring ideas to
+            life with dynamic websites and compelling visuals. Let's build something exceptional together.
+          </p>
         </div>
-        <div class="counter">
-          <div class="count-container">
-            <h1>01</h1>
-            <h1>02</h1>
-            <h1>03</h1>
-            <h1>04</h1>
-            <h1>05</h1>
+
+        <!-- Image Container -->
+        <div class="about-image-container fade-in fade-in-images">
+          <img src="Assets/my photo.jpg" alt="Professional woman working on laptop in modern office"
+            class="about-image">
+
+          <!-- Stats Card -->
+          <div class="stats-card">
+            <svg class="stats-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+            <!-- <div class="stats-number">0%</div> -->
+            <br>
+            <div class="stats-text">
+              Focused on design and growth.
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="cards">
-
-        <div class="card">
-          <div class="card-img">
-            <img src="Assets/bootstrap.gif" alt="">
+  <!--============================== LOGOS =================================-->
+  <section class="companies-section mt-5" id="skills">
+    <div class="container companies-container">
+      <div class="section-header">
+        <div class="trust-indicators">
+          <div class="trust-icon cloud">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
+            </svg>
           </div>
-          <div class="card-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua
-            </p>
+          <div class="trust-icon shield">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11H15.5C16.4,11 17,11.4 17,12V16C17,16.6 16.6,17 16,17H8C7.4,17 7,16.6 7,16V12C7,11.4 7.4,11 8,11H8.5V10C8.5,8.6 9.6,7 12,7M12,8.2C10.2,8.2 9.8,9.2 9.8,10V11H14.2V10C14.2,9.2 13.8,8.2 12,8.2Z" />
+            </svg>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="Assets/bootstrap.gif" alt="">
-          </div>
-          <div class="card-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="Assets/bootstrap.gif" alt="">
-          </div>
-          <div class="card-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="Assets/bootstrap.gif" alt="">
-          </div>
-          <div class="card-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="Assets/bootstrap.gif" alt="">
-          </div>
-          <div class="card-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua
-            </p>
-          </div>
-        </div>
-
-        <div class="card-empty"></div>
-        <div class="card-empty"></div>
-
+        <h2 class="section-title">Mastered skills to build dynamic web experiences</h2>
       </div>
 
-    </section>
+      <div class="companies-grid">
+        <div class="company-logo blockspring blockspring-logo">
+          <div class="logo-text">
+            <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <style type="text/css">
+                  .st0 {
+                    fill: #dd7515;
+                  }
+                </style>
+                <g>
+                  <polygon class="st0"
+                    points="193.431,261.016 211.237,261.016 318.569,261.016 312.062,334.41 256,348.67 199.938,334.41 196.059,290.703 138.856,290.703 146.742,379.683 256,407.465 365.262,379.683 380.403,208.788 188.801,208.788 183.74,151.682 385.467,151.682 390.52,94.696 121.481,94.696 136.224,261.016 ">
+                  </polygon>
+                  <path class="st0"
+                    d="M20.366,0l0.984,10.627l41.882,452.361L256,512l192.767-49.012L491.634,0H20.366z M402.505,423.462 L256,460.713l-146.505-37.251L74.888,49.711h362.223L402.505,423.462z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+            HTML
+          </div>
+        </div>
 
-    <section class="outro">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua
-      </p>
-    </section>
-    
-  </div>
+        <div class="company-logo coinbase coinbase-logo">
+          <div class="logo-text">
+            <i class="ri-css3-line"></i>
+            CSS
+          </div>
+        </div>
+
+        <div class="company-logo airbnb airbnb-logo">
+          <div class="logo-text">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M14 11.25C14 10.2835 14.7835 9.5 15.75 9.5H17.25C17.6642 9.5 18 9.83579 18 10.25C18 10.6642 17.6642 11 17.25 11H15.75C15.6119 11 15.5 11.1119 15.5 11.25V12.75C15.5 12.8881 15.6119 13 15.75 13H16.25C17.2165 13 18 13.7835 18 14.75V16.25C18 17.2165 17.2165 18 16.25 18H14.75C14.3358 18 14 17.6642 14 17.25C14 16.8358 14.3358 16.5 14.75 16.5H16.25C16.3881 16.5 16.5 16.3881 16.5 16.25V14.75C16.5 14.6119 16.3881 14.5 16.25 14.5H15.75C14.7835 14.5 14 13.7165 14 12.75V11.25Z"
+                  fill="#ddcd07"></path>
+                <path
+                  d="M12.75 10.25C12.75 9.83579 12.4142 9.5 12 9.5C11.5858 9.5 11.25 9.83579 11.25 10.25V16.25C11.25 16.3881 11.1381 16.5 11 16.5H9.75C9.33579 16.5 9 16.8358 9 17.25C9 17.6642 9.33579 18 9.75 18H11C11.9665 18 12.75 17.2165 12.75 16.25V10.25Z"
+                  fill="#ddcd07"></path>
+                <path
+                  d="M3 6.25C3 4.45507 4.45507 3 6.25 3H17.75C19.5449 3 21 4.45507 21 6.25V17.75C21 19.5449 19.5449 21 17.75 21H6.25C4.45507 21 3 19.5449 3 17.75V6.25ZM6.25 4.5C5.2835 4.5 4.5 5.2835 4.5 6.25V17.75C4.5 18.7165 5.2835 19.5 6.25 19.5H17.75C18.7165 19.5 19.5 18.7165 19.5 17.75V6.25C19.5 5.2835 18.7165 4.5 17.75 4.5H6.25Z"
+                  fill="#ddcd07"></path>
+              </g>
+            </svg>
+            Javascript
+          </div>
+        </div>
+
+        <div class="company-logo instacart instacart-logo">
+          <div class="logo-text">
+            <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M6 2.5H7M4.5 4V1.5C4.5 0.947715 4.94772 0.5 5.5 0.5H9.5C10.0523 0.5 10.5 0.947715 10.5 1.5V6.5C10.5 7.05228 10.0523 7.5 9.5 7.5H5.5C4.94772 7.5 4.5 7.94772 4.5 8.5V13.5C4.5 14.0523 4.94772 14.5 5.5 14.5H9.5C10.0523 14.5 10.5 14.0523 10.5 13.5V11M8 4.5H1.5C0.947715 4.5 0.5 4.94772 0.5 5.5V10.5C0.5 11.0523 0.947715 11.5 1.5 11.5H4.5M7 10.5H13.5C14.0523 10.5 14.5 10.0523 14.5 9.5V4.5C14.5 3.94772 14.0523 3.5 13.5 3.5H10.5M8 12.5H9"
+                  stroke="#17a1d3"></path>
+              </g>
+            </svg>
+            Python
+          </div>
+        </div>
+
+        <div class="company-logo samsara samsara-logo">
+          <div class="logo-text">
+            <img src="Assets/gsap_logo-removebg-preview.png" alt="">
+            Gsap
+          </div>
+        </div>
+
+        <div class="company-logo slack slack-logo">
+          <div class="logo-text">
+            <i class="ri-git-branch-line"></i>
+            Git
+          </div>
+        </div>
+
+        <div class="company-logo platfora platfora-logo">
+          <div class="logo-text">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path fill-rule="nonzero" clip-rule="nonzero"
+                  d="M0 1.75C0 0.783501 0.783502 0 1.75 0H14.25C15.2165 0 16 0.783502 16 1.75V3.75C16 4.16421 15.6642 4.5 15.25 4.5C14.8358 4.5 14.5 4.16421 14.5 3.75V1.75C14.5 1.61193 14.3881 1.5 14.25 1.5H1.75C1.61193 1.5 1.5 1.61193 1.5 1.75V14.25C1.5 14.3881 1.61193 14.5 1.75 14.5H15.25C15.6642 14.5 16 14.8358 16 15.25C16 15.6642 15.6642 16 15.25 16H1.75C0.783501 16 0 15.2165 0 14.25V1.75ZM4.75 6.5C4.75 6.08579 5.08579 5.75 5.5 5.75H9.25C9.66421 5.75 10 6.08579 10 6.5C10 6.91421 9.66421 7.25 9.25 7.25H8.25V12.5C8.25 12.9142 7.91421 13.25 7.5 13.25C7.08579 13.25 6.75 12.9142 6.75 12.5V7.25H5.5C5.08579 7.25 4.75 6.91421 4.75 6.5ZM11.2757 6.58011C11.6944 6.08164 12.3507 5.75 13.25 5.75C14.0849 5.75 14.7148 6.03567 15.1394 6.48481C15.4239 6.78583 15.4105 7.26052 15.1095 7.54505C14.8085 7.82958 14.3338 7.81621 14.0493 7.51519C13.9394 7.39898 13.7204 7.25 13.25 7.25C12.7493 7.25 12.5306 7.41836 12.4243 7.54489C12.2934 7.70065 12.25 7.896 12.25 8C12.25 8.104 12.2934 8.29935 12.4243 8.45511C12.5306 8.58164 12.7493 8.75 13.25 8.75C13.3257 8.75 13.3988 8.76121 13.4676 8.78207C14.1307 8.87646 14.6319 9.17251 14.9743 9.58011C15.3684 10.0493 15.5 10.604 15.5 11C15.5 11.396 15.3684 11.9507 14.9743 12.4199C14.5556 12.9184 13.8993 13.25 13 13.25C12.1651 13.25 11.5352 12.9643 11.1106 12.5152C10.8261 12.2142 10.8395 11.7395 11.1405 11.4549C11.4415 11.1704 11.9162 11.1838 12.2007 11.4848C12.3106 11.601 12.5296 11.75 13 11.75C13.5007 11.75 13.7194 11.5816 13.8257 11.4551C13.9566 11.2993 14 11.104 14 11C14 10.896 13.9566 10.7007 13.8257 10.5449C13.7194 10.4184 13.5007 10.25 13 10.25C12.9243 10.25 12.8512 10.2388 12.7824 10.2179C12.1193 10.1235 11.6181 9.82749 11.2757 9.41989C10.8816 8.95065 10.75 8.396 10.75 8C10.75 7.604 10.8816 7.04935 11.2757 6.58011Z"
+                  fill="#00d4ff"></path>
+              </g>
+            </svg>
+            Typescript
+          </div>
+        </div>
+
+        <div class="company-logo accolade accolade-logo">
+          <div class="logo-text">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M12 3H9C7.34315 3 6 4.34315 6 6C6 7.65685 7.34315 9 9 9M12 3V9M12 3H15C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9M12 9H9M12 9H15M12 9V15M9 9C7.34315 9 6 10.3431 6 12C6 13.6569 7.34315 15 9 15M15 9C16.6569 9 18 10.3431 18 12C18 13.6569 16.6569 15 15 15C13.3431 15 12 13.6569 12 12C12 10.3431 13.3431 9 15 9ZM12 15H9M12 15V18C12 19.6569 10.6569 21 9 21C7.34315 21 6 19.6569 6 18C6 16.3431 7.34315 15 9 15"
+                  stroke="#d01de3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+            </svg>
+            Figma
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--============================== PROJECTS =================================-->
+  <section class="projects-section" id="portfolio">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+          A collection of my recent works.
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Assets/weatherio.JPG" alt="">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather IO</h3>
+            <p class="project-description">
+              A modern weather application with intuitive UX design with real-time weather details.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://weatherio.surge.sh" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image image-2">
+            <img src="Assets/echo vibes.JPG" alt="">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Echo Vibes</h3>
+            <p class="project-description">
+              An e-commerce website with seamless 3D animations.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+            <div class="project-links">
+              <a href="htt://echo-vibes.surge.sh" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image image-2">
+            <img src="Assets/Furnicom.PNG" alt="">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Furnicom</h3>
+            <p class="project-description">
+              Frontend e-commerce website with a great user experience and responsive design (Just for practice).
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://furnicom.surge.sh" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image image-3">
+            <img src="Assets/royal hotel.PNG" alt="">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Royal Hotel</h3>
+            <p class="project-description">
+              Another site just for practice, where every click reveals exceptional service and unforgettable
+              experiences.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://royal-hotel.surge.sh" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image image-4">
+            <img src="Assets/calcify.jpg" alt="">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CalciFy</h3>
+            <p class="project-description">
+              A project which makes math easier with plenty of calculators with a straight forward UI. (Still under
+              development)
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-image image-4">
+            <img src="Assets/gradient generator.JPG" alt="">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Gradient Generator</h3>
+            <p class="project-description">
+              A simple CSS gradient generator with a user-friendly interface.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+            </div>
+            <div class="project-links">
+              <a href="" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--============================== CTA =================================-->
+  <section class="project section">
+    <div class="project__bg">
+      <div class="project__container container grid">
+        <div class="project__data">
+          <h2 class="project__title">You have a new project</h2>
+          <p class="project__description">Contact me now and get a 20% descount on your new project.</p>
+          <a href="#contact" class="button button--flex button--white project__button">
+            Conatct Me
+            <i class="uil uil-message project__icon button__icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--============================== CONTACT =================================-->
+  <section class="contact-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header fade-in">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">
+          Get in touch with me.
+        </p>
+      </div>
+
+      <!-- Contact Information Cards -->
+      <div class="contact-info-grid">
+        <!-- Phone Card -->
+        <div class="contact-info-card fade-in fade-in-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-info">
+            <h4>+92 336 6370799</h4>
+          </div>
+        </div>
+
+        <!-- Email Card -->
+        <div class="contact-info-card fade-in fade-in-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <h4>hafizbashaar11@gmail.com</h4>
+          </div>
+        </div>
+
+        <!-- Location Card -->
+        <div class="contact-info-card fade-in fade-in-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-info">
+            <h4>Faisalabad, Punjab, Pakistan.</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-container fade-in" id="contact">
+        <h3 class="form-title">Send Us a Message</h3>
+
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle me-2"></i>
+          Thank you! Your message has been sent successfully.
+        </div>
+
+        <div class="error-message" id="errorMessage">
+          <i class="fas fa-exclamation-circle me-2"></i>
+          Please fill in all required fields.
+        </div>
+
+        <form id="form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" id="button">
+            <span class="btn-text">Send</span>
+            <span class="btn-loading" style="display: none;">
+              <i class="fas fa-spinner fa-spin me-2"></i>Sending...
+            </span>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!--============================== FOOTER =================================-->
+  <footer class="footer-dark">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Left Section: Brand and Tagline -->
+        <div class="footer-left">
+          <a href="#" class="footer-brand">
+            Bashaar
+          </a>
+          <p class="footer-tagline">Elevate Digital Brand Experience</p>
+        </div>
+
+        <!-- Center Section: Navigation Links -->
+        <nav class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <!-- Right Section: Contact and Social -->
+        <div class="footer-right">
+          <div>
+            <p class="contact-info">Contact Me</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hafizbashaar11@gmail.com&su=Inquiry&body=Hello,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+              target="_blank" class="contact-email">hafizbashaar11@gmail.com</a>
+          </div>
+
+          <div class="social-follow">
+            <p class="follow-text">Follow Me</p>
+            <div class="social-icons">
+              <a href="https://github.com/Bashaar11" target="_blank" class="social-icon" title="Twitter"
+                aria-label="Twitter">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send/?phone=%2B923366370799&text&type=phone_number&app_absent=0"
+                target="_blank" class="social-icon" title="Facebook" aria-label="Facebook">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hafiz-bashaar-041a052b9/" target="_blank" class="social-icon"
+                title="LinkedIn" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-
+<!-- BOOTSTRAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <!-- GSAP SCROLLTRIGGER -->
@@ -173,5 +611,39 @@
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.1/dist/lenis.min.js"></script>
 <!-- JavaScript -->
 <script src="script.js"></script>
+<!-- AnimeJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" referrerpolicy="no-referrer"></script>
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+  integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  // Initialize EmailJS
+  emailjs.init('bCi3F8ILhBCU7BiCF'); // Replace with your EmailJS public key
+
+  const btn = document.getElementById('button'); // Submit button
+
+  // Add event listener to the form
+  document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    btn.textContent = 'Sending...';  // Update button text to indicate sending status
+
+    const serviceID = 'default_service'; // Your service ID from EmailJS
+    const templateID = 'template_q3zckj5'; // Your template ID from EmailJS
+
+    // Send the form data using emailjs.sendForm
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.textContent = 'Send Email';  // Reset button text
+        alert('Sent!');  // Notify the user of successful submission
+      }, (err) => {
+        btn.textContent = 'Send Email';  // Reset button text
+        alert('Failed to send. Error: ' + JSON.stringify(err));  // Show error message
+      });
+  });
+</script>
 
 </html>

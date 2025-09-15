@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.companies-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.companies-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(66, 153, 225, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(102, 126, 234, 0.05) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.companies-container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    color: #64748b;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    margin-bottom: 20px;
+}
+
+.trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.trust-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounceIn 0.6s ease-out;
+}
+
+.trust-icon.cloud {
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+}
+
+.trust-icon.shield {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 0.8s ease-out;
+    cursor: pointer;
+    min-height: 80px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.company-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.company-logo img {
+    max-width: 120px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.company-logo:hover img {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
+}
+
+.logo-text svg {
+    width: 23px;
+    height: 23px;
+}
+
+/* Individual company logo styles */
+.blockspring-logo {
+    animation-delay: 0.1s;
+}
+
+.coinbase-logo {
+    animation-delay: 0.2s;
+}
+
+.airbnb-logo {
+    animation-delay: 0.3s;
+}
+
+.instacart-logo {
+    animation-delay: 0.4s;
+}
+
+.samsara-logo {
+    animation-delay: 0.5s;
+}
+
+.slack-logo {
+    animation-delay: 0.6s;
+}
+
+.platfora-logo {
+    animation-delay: 0.7s;
+}
+
+.accolade-logo {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .companies-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .companies-section {
+        padding: 60px 0;
+    }
+
+    .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .company-logo {
+        padding: 15px;
+        min-height: 70px;
+    }
+
+    .company-logo img {
+        max-width: 100px;
+        max-height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .companies-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 280px;
+    }
+
+    .trust-indicators {
+        gap: 10px;
+    }
+
+    .trust-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .company-logo {
+        max-width: 250px;
+    }
+}
+
+/* Logo-specific styling */
+.logo-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blockspring .logo-text {
+    color: #dd7515;
+}
+
+.coinbase .logo-text {
+    color: #0052ff;
+}
+
+.airbnb .logo-text {
+    color: #d9d900;
+
+    svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.instacart .logo-text {
+    color: #17a1d3;
+}
+
+.samsara .logo-text {
+    color: #13c74c;
+    font-size: 1.3rem;
+
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.slack .logo-text {
+    color: #000000;
+}
+
+.platfora .logo-text {
+    color: #00d4ff;
+}
+
+.accolade .logo-text {
+    color: #d01de3;
+
+    svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Icons for logos */
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
